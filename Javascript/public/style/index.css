@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+html,
+body {
+    margin: 0;
+    background-color: rgb(35, 35, 35);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 15%;
+    padding-right: 5%;
+    font-size: 20px;
+    height: 80px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navlinks>*:not(:first-child) {
+    margin-left: 100px;
+}
+
+.navlinks {
+    width: 90%;
+    justify-content: space-between;
+}
+
+.centeredForm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loginForm {
+    width: 300px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.registerForm {
+    width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12px;
+    height: auto;
+
+}
+
+.n {display: block;}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.loginInput {
+    width: 90%;
+    border: none;
+    height: 40px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.registerInput {
+    border: none;
+    height: 40px;
+    border-radius: 14px;
+    text-align: center;
+    width: 40%;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loginSubmit, .btn {
+    height: 40px;
+    width: 40%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.loginSubmit {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.loginSubmit:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.btn {
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.ok {
+    color: rgb(0, 255, 60);
+    font-weight: bold;
+}

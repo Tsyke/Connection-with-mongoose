@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navlinks">
+            <a href="/">Home</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="right">
+            Login
+        </div>
+    </div>
+    <div class="centeredForm">
+        <form action="/api/login" class="loginForm" method="post">
+            <% if(err) { %> <p class="error"><%= err %></p> <% } %>
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" name="username" class="loginInput" placeholder="Nom d'utilisateur..." required>
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" class="loginInput" placeholder="Mot de passe..." required>
+            <hr>
+            <div class="btns">
+                <input type="submit" class="loginSubmit" value="Se connecter">
+                <a class="btn" href="/auth/register">S'inscrire</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navlinks">
+            <a href="/">Home</a>
+            <a href="#">Other</a>
+        </div>
+        <div class="right">
+            Login
+        </div>
+    </div>
+    <div class="centeredForm">
+        <form action="/api/register" class="registerForm" method="post">
+            <% if(err) %> <p class="error"><%= err %></p>
+            <div class="input">
+                <input type="text" name="username" class="registerInput" placeholder="Nom d'utilisateur" required>
+                <input type="email" name="email" class="registerInput" placeholder="E-mail..." required>
+            </div>
+            <div class="input">
+                <input type="text" name="name" class="registerInput" placeholder="Prénom..." required>
+                <input type="text" name="firstname" class="registerInput" placeholder="Nom de famille..." required>
+            </div>
+            <div class="input">
+                <input type="password" name="password" class="registerInput" placeholder="Mot de passe..." required>
+                <input type="password" name="passwordConfirm" class="registerInput" placeholder="Confirmez le mot de passe..." required>
+            </div>
+
+            <hr>
+            <div class="btns">
+                <input type="submit" class="loginSubmit" value="S'inscrire">
+                <a class="btn" href="/auth/login">J'ai déjà un compte</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
